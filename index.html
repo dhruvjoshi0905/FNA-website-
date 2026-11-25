@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no, address=no" />
+  <title>FNA | Stories of Spatial Form and Architecture Practice (@fna_designlab)</title>
+  <meta name="description"
+    content="FNA Design Lab (@fna_designlab) is an award-winning architecture, interior architecture, and object design practice based in Nagpur. Crafting spatial narratives through modern functional luxury, intelligent space planning, and bespoke curved joinery." />
+  <meta name="keywords"
+    content="FNA, FNA Design Lab, fna_designlab, architecture studio Nagpur, modern Indian architecture, curved joinery, bespoke furniture, spatial narrative, architecture practice India" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="FNA Design Lab" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FNA | Stories of Spatial Form and Architecture Practice" />
+  <meta property="og:description"
+    content="Architecture, interiors, and objects crafted through spatial intelligence, curved joinery, and honest tactile materiality." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://fnadesignlab.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FNA Design Lab" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FNA | Stories of Spatial Form and Architecture Practice" />
+  <meta name="twitter:description" content="Architecture, interiors, and bespoke objects crafted in Nagpur, India." />
+  <meta name="twitter:image" content="images/hero.jpg" />
+
+  <!-- Google Fonts: Onest, JetBrains Mono, Noto Sans Gujarati, Noto Sans Devanagari (Marathi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Noto+Sans+Gujarati:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=20261125_5" />
+</head>
+
+<body class="theme-light staap-slider-page">
+
+  <!-- ══════════════════════════════════════════════════════════════
+       BESPOKE ARCHITECTURAL DRAFTING CURSOR (FNA DESIGN LAB)
+       (Precision Terracotta Lead Point + Fluid Slate Drafting Frame)
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="fna-cursor-lead" id="fna-cursor-lead" aria-hidden="true"></div>
+  <div class="fna-cursor-reticle" id="fna-cursor-reticle" aria-hidden="true">
+    <span class="reticle-corner tl"></span>
+    <span class="reticle-corner tr"></span>
+    <span class="reticle-corner bl"></span>
+    <span class="reticle-corner br"></span>
+    <span class="cursor-tag-label" id="cursor-tag-label"></span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       1. STAAP-STYLE FULLSCREEN LOADING SCREEN
+       (Features Gujarati, Marathi, English in FNA Brand Tri-Colors,
+        Live Clock IST, Real-time Date, Coordinates 28.6139N 77.2090E)
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="staap-loader-screen" id="staap-loader">
+    <!-- Atmospheric Visual Layer -->
+    <div class="loader-backdrop">
+      <img src="images/hero.jpg" alt="FNA Design Lab" class="loader-bg-media" />
+      <div class="loader-overlay-tint"></div>
+    </div>
+
+    <!-- Centerpiece Script Transitions in FNA Brand Logo Colors (Terracotta, Slate, Olive) -->
+    <div class="loader-center-content">
+      <div class="loader-script-carousel" id="loader-scripts">
+        <!-- Gujarati Script in FNA Tri-Color Theme -->
+        <div class="loader-script-pane active" id="pane-gujarati">
+          <span class="script-giant-text font-gujarati">
+            <span class="tri-text-f">એફ</span>.<span class="tri-text-n">એન</span>.<span class="tri-text-a">એ</span>.
+          </span>
+          <span class="script-sub-text font-gujarati">સ્થાપત્યની વાર્તાઓ · સ્થાપત્ય અને કળા રચના</span>
+        </div>
+        <!-- Marathi Script (Devanagari) in FNA Tri-Color Theme -->
+        <div class="loader-script-pane" id="pane-marathi">
+          <span class="script-giant-text font-marathi">
+            <span class="tri-text-f">एफ</span>.<span class="tri-text-n">एन</span>.<span class="tri-text-a">ए</span>.
+          </span>
+          <span class="script-sub-text font-marathi">वास्तुकलेच्या गोष्टी · वास्तुकला आणि अंतर्गत रचना</span>
+        </div>
+        <!-- Final Loader Phase: Exact FNA Brand Logo -->
+        <div class="loader-script-pane" id="pane-english">
+          <div class="loader-brand-logo-wrap">
+            <img src="images/logo.png?v=20261110_3" alt="FNA Design Lab Logo" class="loader-exact-logo" />
+          </div>
+          <span class="script-sub-text font-sans">Stories of Spatial Form and Architecture Practice</span>
+        </div>
+      </div>
+
+      <!-- Live Loading Meter -->
+      <div class="loader-meter-bar">
+        <div class="meter-rail">
+          <div class="meter-progress" id="loader-progress-bar"></div>
+        </div>
+        <div class="meter-info-row font-mono">
+          <span class="meter-status-msg" id="loader-status-msg">Calibrating spatial coordinates…</span>
+          <span class="meter-num-pct" id="loader-pct-counter">00%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staap Style 4-Corner Top Metadata Header Inside Loader -->
+    <div class="loader-meta-topbar">
+      <!-- Corner 1: Live Date & Day -->
+      <div class="meta-col meta-col-date font-mono">
+        <span id="loader-live-date">[5] NOV 2026</span>
+        <span id="loader-live-day" class="text-mist">Thursday</span>
+      </div>
+
+      <!-- Corner 2: Real-time Clock IST & Coordinates -->
+      <div class="meta-col meta-col-time font-sans">
+        <span id="loader-live-clock">17:00:00 IST</span>
+        <span class="text-mist">21.1354° N, 79.0692° E</span>
+      </div>
+
+      <!-- Corner 3: Studio Identity -->
+      <div class="meta-col meta-col-brand font-sans">
+        <span class="text-terracotta">FNA Design Lab <sup>®</sup></span>
+        <span class="text-mist">Nandanvan, Nagpur</span>
+      </div>
+
+      <!-- Corner 4: Philosophy Quote -->
+      <div class="meta-col meta-col-quote">
+        <p class="quote-text">
+          “Stories of Form”: the art of telling a narrative through design, and “Practice”: perfecting it through a
+          repetitive pattern of learning and creating.
+        </p>
+      </div>
+    </div>
+
+    <!-- Click / Key Skip Prompt -->
+    <div class="loader-bottom-prompt font-mono">
+      <span>[CLICK OR PRESS ESC TO ENTER]</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       2. FIXED STAAP NAVBAR (WITH CLICKABLE LOGO, SECTIONS & DISPATCH)
+       ══════════════════════════════════════════════════════════════ -->
+  <header class="staap-navbar" id="staap-nav">
+    <div class="nav-inner">
+      <!-- Left: Big Logo Mark (Clickable -> Home) with No Written Text -->
+      <div class="nav-brand-col">
+        <button type="button" class="nav-logo-btn" id="nav-logo-btn" title="Return to Home">
+          <img src="images/logo.png?v=20261110_3" alt="FNA Design Lab Logo" class="nav-logo-mark" />
+        </button>
+      </div>
+
+      <!-- Center-Left: Section Switcher: Home -> About -> Work -> Connect (Numbers Removed & Larger) -->
+      <nav class="nav-links-col" id="desktop-section-links">
+        <button type="button" class="nav-section-link active" data-index="0">Home</button>
+        <button type="button" class="nav-section-link" data-index="1">About</button>
+        <button type="button" class="nav-section-link" data-index="2">Work</button>
+        <button type="button" class="nav-section-link" data-index="3">Connect</button>
+      </nav>
+
+
+
+      <!-- Right-Aligned Controls & Mobile Toggle -->
+      <div class="nav-controls-col">
+        <button type="button" class="btn-archive-search" id="btn-open-search" title="Quick Search Archive (Ctrl + K)"
+          aria-label="Search">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="search-hint font-mono">⌘K</span>
+        </button>
+
+        <button type="button" class="mobile-hamburger-btn" id="mobile-hamburger" aria-label="Toggle Navigation">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       3. 'F' SCROLLER / SLIDE PROGRESS TRACKER (RIGHT MARGIN)
+       (Letter 'F' acts as the scroller of the log/page)
+       ══════════════════════════════════════════════════════════════ -->
+  <aside class="f-scroller-rail" id="f-scroller-rail" title="FNA Scroller — Click to advance">
+    <div class="scroller-inner-track">
+      <div class="scroller-pill" id="scroller-pill">
+        <span class="scroller-letter">F</span>
+        <span class="scroller-digit font-mono" id="scroller-current-digit">01</span>
+      </div>
+    </div>
+    <div class="scroller-guide-dots">
+      <span class="s-dot active" data-index="0" title="01 Home"></span>
+      <span class="s-dot" data-index="1" title="02 About"></span>
+      <span class="s-dot" data-index="2" title="03 Work"></span>
+      <span class="s-dot" data-index="3" title="04 Connect"></span>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       4. MOBILE NAVIGATION DRAWER & BACKDROP
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <div class="mobile-menu-drawer" id="mobile-drawer" role="dialog" aria-modal="true"
+    aria-label="Mobile Navigation Menu">
+    <div class="drawer-top-bar">
+      <div class="drawer-logo-wrap">
+        <img src="images/logo.png?v=20261110_3" alt="FNA" class="drawer-logo-img" />
+        <span class="text-xs text-terracotta">@fna_designlab</span>
+      </div>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="drawer-nav-list font-sans">
+      <button type="button" class="drawer-item-btn" data-index="0">Home</button>
+      <button type="button" class="drawer-item-btn" data-index="1">About &amp; Practice</button>
+      <button type="button" class="drawer-item-btn" data-index="2">Selected Works</button>
+      <button type="button" class="drawer-item-btn" data-index="3">Connect &amp; Enquiry</button>
+    </div>
+
+    <div class="drawer-contact-footer">
+      <div class="contact-entry">
+        <span class="font-mono text-xs text-mist">Email Correspondence</span>
+        <a href="mailto:fnadesignlab@gmail.com" class="c-link">fnadesignlab@gmail.com</a>
+      </div>
+      <div class="contact-entry">
+        <span class="font-mono text-xs text-mist">Direct Telephone / WhatsApp</span>
+        <span class="c-link"><a href="tel:+918055168548" class="c-link">80551 68548</a> / <a href="tel:+919326427435"
+            class="c-link">93264 27435</a></span>
+      </div>
+      <div class="contact-entry">
+        <span class="font-mono text-xs text-mist">Studio Instagram</span>
+        <a href="https://www.instagram.com/fna_designlab" target="_blank" rel="noopener noreferrer"
+          class="c-link">@fna_designlab ↗</a>
+      </div>
+      <div class="drawer-lang-note font-mono text-xs">
+        <span>ગુજરાતી: એફ.એન.એ.</span> · <span>मराठी: एफ.एन.ए.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       5. MAIN STAAP HORIZONTAL MULTI-SCREEN ENGINE
+       (Desktop: w-screen h-screen sliding container with 4 sections:
+        #home -> #work -> #about -> #connect. Mobile: vertical stack)
+       ══════════════════════════════════════════════════════════════ -->
+  <main class="staap-viewport-slider" id="viewport-slider">
+    <div class="staap-slider-track" id="slider-track">
+
+      <!-- ──────────────────────────────────────────────────────────
+           SCREEN 0: HOME / HERO (STAAP STYLE MONOLITHIC CINEMATIC)
+           ────────────────────────────────────────────────────────── -->
+      <section class="staap-slide-screen slide-home" id="home" data-screen-index="0">
+        <!-- Visual Background -->
+        <div class="home-media-stage">
+          <img src="images/hero.jpg" alt="Monolith Lounge & Pavilion by FNA Design Lab" class="home-hero-img" />
+          <div class="home-vignette-overlay"></div>
+        </div>
+
+        <!-- Center Atmospheric Statement -->
+        <div class="home-center-stage">
+          <div class="hero-tri-mark">
+            <span class="tri-f"></span>
+            <span class="tri-n"></span>
+            <span class="tri-a"></span>
+          </div>
+
+          <p class="hero-regional-intro font-sans">
+            <span class="font-gujarati">એફ.એન.એ.</span> · <span class="font-marathi">एफ.एन.ए.</span> · <span>
+              INDIA</span>
+          </p>
+
+          <h1 class="hero-monolith-title font-serif">Architecture | Interiors | Furniture</h1>
+
+          <p class="hero-monolith-sub">
+
+          </p>
+
+          <div class="hero-cta-group font-sans">
+            <button type="button" class="btn-slide-nav" data-index="1">
+              <span>ABOUT PRACTICE</span>
+              <span class="arr">→</span>
+            </button>
+            <button type="button" class="btn-slide-nav ghost" data-index="2">
+              <span>EXPLORE WORKS <span id="home-works-count">[00]</span></span>
+              <span class="arr">→</span>
+            </button>
+            <button type="button" class="btn-slide-nav ghost" data-index="3">
+              <span>PROJECT ENQUIRY</span>
+              <span class="arr">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Desktop Scroll Cue -->
+        <div class="home-bottom-cue font-mono">
+          <span class="cue-bracket">[SCROLL TO DISCOVER]</span>
+          <span class="cue-wheel-indicator"></span>
+          <span class="cue-coords">21.1354° N, 79.0692° E</span>
+        </div>
+      </section>
+
+      <!-- ──────────────────────────────────────────────────────────
+           SCREEN 1: ABOUT & PRACTICE (STAAP REGIONAL SCRIPT & MANIFESTO)
+           (Gujarati: સ્થાપત્યની વાર્તાઓ · Marathi: वास्तुकलेच्या गोष्टी)
+           ────────────────────────────────────────────────────────── -->
+      <section class="staap-slide-screen slide-about" id="about" data-screen-index="1">
+        <div class="about-screen-layout">
+          <!-- Left Column: Manifesto, Regional Scripts & Narrative -->
+          <div class="about-left-col">
+            <div class="about-title-block">
+              <span class="font-mono text-xs text-terracotta">PRACTICE MANIFESTO</span>
+              <h2 class="about-main-headline font-serif">Stories of Art &amp;<br />Architecture Practice</h2>
+              <div class="about-scripts-duo">
+                <p class="script-badge-line font-gujarati">
+                  <span>ગુજરાતી:</span> <strong>સ્થાપત્યની વાર્તાઓ</strong> — ડિઝાઇનની ભાષા દ્વારા રચના અને નિરંતર
+                  અભ્યાસ.
+                </p>
+                <p class="script-badge-line font-marathi">
+                  <span>मराठी:</span> <strong>वास्तुकलेच्या गोष्टी</strong> — वास्तुकला, अंतर्गत रचना आणि मानवी अनुभव.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-story-col">
+              <p class="story-lead">
+                At FNA Design Lab (<a href="https://www.instagram.com/fna_designlab" target="_blank"
+                  rel="noopener noreferrer" class="link-styled">@fna_designlab</a>) we craft thoughtful and inspiring
+                designs in architecture, interiors and furniture that reflect the essence of their surroundings. Routed
+                in the principles of context-driven design, we blend local materials traditional techniques and some
+                experimentation to create spaces and objects that are functional, sustainable and full of character.
+              </p>
+
+              <div class="studio-stats-line font-sans">
+                <!-- <div class="stat-pill stat-terracotta"><strong>50+</strong> Completed Projects</div> -->
+                <div class="stat-pill stat-slate"><strong>02</strong> Years of Practice</div>
+                <div class="stat-pill stat-olive"><strong>03</strong> Core Disciplines</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Complete Full-Height Studio Office Photograph -->
+          <div class="about-right-col">
+            <div class="about-office-frame">
+              <img src="images/fna%20office.jpeg" alt="FNA Design Lab Studio Office — Nandanvan, Nagpur"
+                class="about-office-img" />
+              <span class="office-caption font-sans">FNA Design Lab · Nandanvan Studio, Nagpur</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ──────────────────────────────────────────────────────────
+           SCREEN 2: WORK / SELECTED WORKS ARCHIVE (STAAP STYLE)
+           (Left Panel: Overview & Filter. Right Panel: Dynamic Catalog)
+           ────────────────────────────────────────────────────────── -->
+      <section class="staap-slide-screen slide-work" id="work" data-screen-index="2">
+        <div class="work-screen-layout">
+          <!-- Left Column: Typology & Description -->
+          <div class="work-left-panel">
+            <div class="panel-header-line font-mono">
+              <h3>Selected Works</h3>
+              <span class="text-terracotta">[2024-2026]</span>
+            </div>
+
+            <p class="work-intro-narrative">
+              A collection of architectural and interior design projects exploring the relationship between space,
+              material, functionality, and context. Each project reflects a thoughtful approach to design, balancing
+              aesthetics with practical needs while creating spaces that are meaningful, engaging, and responsive to the
+              people who inhabit them.
+            </p>
+
+            <div class="work-filters-list font-sans" id="work-category-filters">
+              <button type="button" class="work-cat-btn active" data-filter="All">All Projects <span class="count"
+                  id="work-count-all">[00]</span></button>
+              <button type="button" class="work-cat-btn" data-filter="Architecture"><span class="fna-dot dot-f"></span>
+                Architecture <span class="count" id="work-count-arch">[00]</span></button>
+              <button type="button" class="work-cat-btn" data-filter="Interiors"><span class="fna-dot dot-n"></span>
+                Interiors <span class="count" id="work-count-interiors">[00]</span></button>
+              <button type="button" class="work-cat-btn" data-filter="Objects"><span class="fna-dot dot-a"></span>
+                Objects <span class="count" id="work-count-objects">[00]</span></button>
+            </div>
+
+            <div class="work-side-contact font-sans text-xs">
+              <span class="text-mist">For comprehensive technical drawings &amp; CAD portfolios:</span><br />
+              <a href="mailto:fnadesignlab@gmail.com" class="text-terracotta">fnadesignlab@gmail.com ↗</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Projects Table & Showcase -->
+          <div class="work-right-panel">
+            <!-- Table Header -->
+            <div class="work-table-header font-sans">
+              <span class="col-head col-idx">#</span>
+              <span class="col-head col-name">PROJECT NAME</span>
+              <span class="col-head col-type">TYPOLOGY</span>
+              <span class="col-head col-loc">LOCATION</span>
+              <span class="col-head col-year">YEAR</span>
+              <span class="col-head col-action">ACTION</span>
+            </div>
+
+            <!-- Dynamic Project Rows (Generated from FNA_DB in app.js) -->
+            <div class="work-rows-container" id="work-table-rows">
+              <!-- Rendered live via app.js -->
+            </div>
+
+            <!-- Live Hover Floating Image Preview Window -->
+            <div class="project-hover-preview" id="hover-preview-card">
+              <img src="images/hero.jpg" alt="Preview" id="hover-preview-img" />
+              <div class="preview-caption font-mono" id="hover-preview-cap">Monolith Lounge &amp; Pavilion</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ──────────────────────────────────────────────────────────
+           SCREEN 3: CONNECT & BRIEF (STAAP TABULAR CONTACT & DOSSIER)
+           ────────────────────────────────────────────────────────── -->
+      <section class="staap-slide-screen slide-connect" id="connect" data-screen-index="3">
+        <div class="connect-screen-layout">
+          <!-- Left: Tabular Staap Contact Directory -->
+          <div class="connect-directory-col">
+            <!-- Address Row -->
+            <div class="tabular-contact-row">
+              <h4 class="row-label font-sans">ADDRESS</h4>
+              <div class="row-content">
+                <p class="address-text">
+                  FNA Design Lab, First Floor, Dr. Trivedi Complex,<br />
+                  Nandanvan Rd, near Shravan Hospital, Bapu Nagar,<br />
+                  Nandanvan, Nagpur, Maharashtra 440024
+                </p>
+                <div class="address-actions font-sans text-xs">
+                  <a href="https://maps.app.goo.gl/P2sLFmENzyWVefEh7" target="_blank" rel="noopener noreferrer"
+                    class="link-action">[View in Maps ↗]</a>
+                  <span>21.1354° N, 79.0692° E</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inquiries & Telephony Row -->
+            <div class="tabular-contact-row">
+              <h4 class="row-label font-mono">DIRECT INQUIRIES</h4>
+              <div class="row-content">
+                <div class="contact-links-grid">
+                  <div>
+                    <span class="font-mono text-xs text-mist">Studio Email</span><br />
+                    <a href="mailto:fnadesignlab@gmail.com" class="direct-link">fnadesignlab@gmail.com</a>
+                  </div>
+                  <div>
+                    <span class="font-mono text-xs text-mist">Telephone / WhatsApp</span><br />
+                    <a href="tel:+918055168548" class="direct-link">80551 68548</a> <span class="direct-link">/</span>
+                    <a href="tel:+919326427435" class="direct-link">93264 27435</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Dispatches Row -->
+            <div class="tabular-contact-row">
+              <h4 class="row-label font-mono">DISPATCHES</h4>
+              <div class="row-content">
+                <div class="social-links-row font-mono">
+                  <a href="https://www.instagram.com/fna_designlab" target="_blank" rel="noopener noreferrer"
+                    class="social-chip">Instagram (@fna_designlab) ↗</a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bottom Line -->
+            <div class="connect-footer-bar font-mono text-xs">
+              <span>© <span class="current-year">2026</span> FNA Design Lab. All rights reserved.</span>
+              <span class="lang-strip">ગુજરાતી: એફ.એન.એ. · मराठी: एफ.एन.ए.</span>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Project Commission Enquiry -->
+          <div class="connect-dossier-col">
+            <div class="dossier-form-card" id="dossier-card">
+              <div class="dossier-card-header">
+                <span class="font-mono text-xs text-terracotta">COMMISSION ENQUIRY</span>
+                <h3 class="dossier-title font-serif">Initiate Project Enquiry</h3>
+                <p class="dossier-sub">Transmitting your brief directly into our studio registry.</p>
+              </div>
+
+              <!-- Step 1: Disciplines -->
+              <div class="dossier-step-block" id="dossier-step-1">
+                <label class="dossier-label font-sans">01 / SELECT DISCIPLINES *</label>
+                <div class="scope-pill-group" id="dossier-scope-pills">
+                  <button type="button" class="scope-pill active" data-scope="Architecture">Architecture</button>
+                  <button type="button" class="scope-pill" data-scope="Interior Architecture">Interior
+                    Architecture</button>
+
+                  <button type="button" class="scope-pill" data-scope="Object Commission">Object Commission</button>
+                  <button type="button" class="scope-pill" data-scope="Turnkey Execution">Turnkey Execution</button>
+                </div>
+                <span class="field-error-notice" id="scope-error-notice" style="display: none;">Please select at least
+                  one discipline.</span>
+              </div>
+
+              <!-- Step 2: Coordinates -->
+              <div class="dossier-step-block">
+                <label class="dossier-label font-sans">02 / CLIENT COORDINATES *</label>
+                <div class="dossier-input-grid">
+                  <input type="text" class="dossier-input" id="dossier-name" placeholder="Full Name *" required />
+                  <input type="email" class="dossier-input" id="dossier-email" placeholder="Email Address *" required />
+                  <input type="tel" class="dossier-input" id="dossier-phone" placeholder="Phone / WhatsApp" />
+                  <input type="text" class="dossier-input" id="dossier-city" placeholder="Project City / Location" />
+                </div>
+                <span class="field-error-notice" id="client-error-notice" style="display: none;">Please provide a valid
+                  name and email address.</span>
+              </div>
+
+              <!-- Step 3: Brief Notes -->
+              <div class="dossier-step-block">
+                <label class="dossier-label font-sans" for="dossier-notes">03 / PROJECT VISION &amp; PARAMETERS</label>
+                <textarea class="dossier-textarea" id="dossier-notes"
+                  placeholder="Describe the site, spatial intent, constraints, or materials of interest…"
+                  rows="3"></textarea>
+              </div>
+
+              <div class="dossier-actions-row">
+                <button type="button" class="btn-transmit-dossier" id="btn-transmit-dossier">
+                  <span>Transmit Enquiry</span>
+                  <span class="arr">→</span>
+                </button>
+              </div>
+
+              <!-- Success State -->
+              <div class="dossier-success-banner" id="dossier-success" style="display: none;">
+                <span class="success-check">✓</span>
+                <h4 class="font-serif">Enquiry Registered</h4>
+                <p class="font-mono text-xs text-terracotta" id="dossier-ref-tag">REF: FNA-2026-0000</p>
+                <p class="text-xs text-mist">Our studio partners will review your spatial brief and reply within 24
+                  hours.</p>
+                <button type="button" class="btn-reset-dossier font-sans" id="btn-reset-dossier">Submit Another
+                  Enquiry</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       6. PROJECT CASE STUDY DETAIL MODAL
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="staap-modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Project Case Study">
+    <div class="modal-card-box">
+      <button type="button" class="modal-close-trigger" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-gallery-pane">
+        <img src="" alt="" id="modal-display-img" class="modal-hero-photo" />
+      </div>
+      <div class="modal-details-pane">
+        <div class="modal-tag-row font-mono">
+          <span class="text-terracotta" id="modal-category">ARCHITECTURE</span>
+          <span class="text-mist" id="modal-index">01 / ARCH</span>
+        </div>
+        <h2 class="modal-project-title font-serif" id="modal-title">Monolith Lounge &amp; Pavilion</h2>
+        <div class="modal-meta-grid font-mono text-xs" id="modal-meta">
+          <div><span class="text-mist">Location:</span> <strong id="modal-location">Alibaug, Maharashtra</strong></div>
+          <div><span class="text-mist">Year:</span> <strong id="modal-year">2025</strong></div>
+          <div><span class="text-mist">Studio:</span> <strong>FNA Design Lab</strong></div>
+        </div>
+        <div class="modal-narrative-body" id="modal-description">
+          Detailed project narrative...
+        </div>
+        <div class="modal-footer-cta">
+          <button type="button" class="btn-modal-brief font-mono" onclick="closeModal(); goToScreen(3);">
+            <span>Commission Similar Scope →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       7. QUICK ARCHIVE SEARCH MODAL (Ctrl + K)
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="staap-search-overlay" id="search-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Archive Search">
+    <div class="search-dialog-box">
+      <div class="search-input-bar">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          class="text-mist">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-input-field" id="search-field"
+          placeholder="Search archive (e.g. Concrete, Alibaug, Rosewood, Wardrobe)…" autocomplete="off" />
+        <button type="button" class="search-close-x" id="search-close-btn" aria-label="Close search">✕</button>
+      </div>
+
+      <div class="search-results-meta font-mono text-xs">
+        <span id="search-hits-count">08 Projects in Archive</span>
+        <span class="text-mist">ESC to close</span>
+      </div>
+
+      <div class="search-hits-list" id="search-hits-list">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       8. TOAST NOTIFICATIONS
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="staap-toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js?v=20261125_4"></script>
+  <script src="js/app.js?v=20261125_4"></script>
+</body>
+
+</html>

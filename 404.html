@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Spatial Coordinates Unresolved — FNA Design Lab</title>
+  <meta name="description" content="The spatial coordinates you are seeking cannot be resolved. The structure may have been re-imagined, relocated, or dissolved into the landscape. Return to FNA Design Lab.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon System -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Google Fonts: Onest, JetBrains Mono, Noto Sans Gujarati & Devanagari (Marathi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Gujarati:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css?v=20261125_4">
+
+  <style>
+    .error-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--canvas-bg);
+      position: relative;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
+    .error-header {
+      padding: 1.25rem var(--container-pad);
+      border-bottom: 1px solid var(--hairline-light);
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(16px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .error-main-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(3rem, 6vw, 5rem) 1.5rem;
+    }
+
+    .error-monolith-box {
+      max-width: 620px;
+      width: 100%;
+      background: var(--canvas-card);
+      border: 1px solid var(--hairline-medium);
+      border-radius: var(--radius-lg);
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-monolith-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--fna-terracotta) 0%, var(--fna-slate) 50%, var(--fna-olive) 100%);
+    }
+
+    .error-brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      margin-bottom: 1.25rem;
+    }
+
+    .brand-logo-img {
+      width: auto;
+      height: 48px;
+      max-width: 130px;
+      object-fit: contain;
+      transform: scale(2.0);
+    }
+
+    .error-logo-img {
+      width: auto;
+      height: 54px;
+      max-width: 140px;
+      object-fit: contain;
+      transform: scale(2.0);
+    }
+
+    .error-multi-scripts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-mist);
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .script-pill-tag {
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-pill);
+      background: var(--canvas-warm);
+      border: 1px solid var(--hairline-light);
+    }
+
+    .error-numeral {
+      font-family: var(--font-serif);
+      font-size: clamp(4.5rem, 12vw, 6.8rem);
+      font-weight: 400;
+      line-height: 1;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.04em;
+    }
+
+    .error-numeral em {
+      font-style: italic;
+      color: var(--fna-terracotta);
+    }
+
+    .error-status-badge {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--fna-terracotta);
+      font-weight: 600;
+      display: inline-block;
+      background: var(--fna-terracotta-light);
+      padding: 0.35rem 0.95rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1.5rem;
+    }
+
+    .error-explanation {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto 2.25rem;
+    }
+
+    .error-actions-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.25rem;
+    }
+
+    .error-quick-directory {
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--hairline-light);
+    }
+
+    .directory-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-mist);
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+
+    .directory-pills-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .directory-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-pill);
+      background: var(--canvas-warm);
+      border: 1px solid var(--hairline-medium);
+      font-size: 0.75rem;
+      color: var(--text-primary);
+      transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .directory-pill:hover {
+      background: var(--fna-slate-dark);
+      color: var(--text-white);
+      border-color: var(--fna-slate-dark);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 540px) {
+      .error-actions-group {
+        flex-direction: column;
+        width: 100%;
+      }
+      .error-actions-group .btn-primary-action,
+      .error-actions-group .btn-secondary-action {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body class="error-page">
+
+  <!-- Bespoke Architectural Drafting Cursor (FNA Design Lab) -->
+  <div class="fna-cursor-lead" id="fna-cursor-lead" aria-hidden="true"></div>
+  <div class="fna-cursor-reticle" id="fna-cursor-reticle" aria-hidden="true">
+    <span class="reticle-corner tl"></span>
+    <span class="reticle-corner tr"></span>
+    <span class="reticle-corner bl"></span>
+    <span class="reticle-corner br"></span>
+    <span class="cursor-tag-label" id="cursor-tag-label"></span>
+  </div>
+
+  <div class="error-page-wrapper">
+    <!-- Header -->
+    <header class="error-header">
+      <a href="index.html" class="brand-link" aria-label="Return to FNA Design Lab Home">
+        <img src="images/logo.png?v=20261110_3" alt="FNA Design Lab" class="brand-logo-img">
+        <div class="brand-typography">
+          <span class="brand-title">FNA</span>
+          <span class="brand-sub font-mono">Design Lab</span>
+        </div>
+        <div class="fna-tri-bar">
+          <span class="bar-f"></span>
+          <span class="bar-n"></span>
+          <span class="bar-a"></span>
+        </div>
+      </a>
+      <a href="index.html" class="btn-header-cta">
+        <span>← Return to Studio</span>
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="error-main-content">
+      <div class="error-monolith-box">
+        <a href="index.html" class="error-brand-mark" title="FNA Design Lab">
+          <img src="images/logo.png?v=20261110_3" alt="FNA Design Lab Logo" class="error-logo-img">
+        </a>
+
+        <!-- Multi-Script Script Tags (Gujarati & Marathi) -->
+        <div class="error-multi-scripts font-mono">
+          <span class="script-pill-tag">ગુજરાતી: એફ.એન.એ.</span>
+          <span>·</span>
+          <span class="script-pill-tag">मराठी: एफ.एन.ए.</span>
+          <span>·</span>
+          <span class="script-pill-tag">FNA DESIGN LAB</span>
+        </div>
+
+        <h1 class="error-numeral">4<em>0</em>4</h1>
+        <div class="error-status-badge font-mono">SPATIAL COORDINATES UNRESOLVED</div>
+
+        <p class="error-explanation">
+          The requested spatial boundary cannot be constructed. The blueprint may have been relocated, re-imagined, or dissolved into the architectural landscape.
+        </p>
+
+        <div class="error-actions-group">
+          <a href="index.html" class="btn-primary-action">
+            <span>Return to Studio Index</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="index.html#inquiry" class="btn-secondary-action" style="background: var(--fna-slate-dark); color: var(--text-white);">
+            <span>Commission a Project</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="error-quick-directory">
+          <span class="directory-label font-mono">DIRECT SPATIAL SECTORS</span>
+          <div class="directory-pills-row font-mono">
+            <a href="index.html#works" class="directory-pill"><span class="dot-fna dot-f"></span> Works Archive</a>
+            <a href="index.html#studio" class="directory-pill"><span class="dot-fna dot-n"></span> Studio Profile</a>
+            <a href="index.html#practice" class="directory-pill"><span class="dot-fna dot-a"></span> Three Pillars</a>
+            <a href="index.html#materials" class="directory-pill">Material Palette</a>
+            <a href="index.html#journal" class="directory-pill">@fna_designlab ↗</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer style="padding: 1.5rem var(--container-pad); border-top: 1px solid var(--hairline-light); text-align: center; color: var(--text-mist); font-size: 0.75rem;" class="font-mono">
+      <span>© <span id="error-year">2026</span> FNA Design Lab. Architecture | Interiors | Objects · Nagpur</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('error-year').textContent = new Date().getFullYear();
+
+    // Bespoke Architectural Drafting Cursor (FNA Design Lab)
+    const cursorLead = document.getElementById('fna-cursor-lead');
+    const cursorReticle = document.getElementById('fna-cursor-reticle');
+    if (cursorLead && cursorReticle) {
+      let targetX = -100, targetY = -100;
+      let frameX = -100, frameY = -100;
+      let isInit = false, isVis = false;
+
+      function glide() {
+        if (isInit && isVis) {
+          const dx = targetX - frameX;
+          const dy = targetY - frameY;
+          if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+            frameX += dx * 0.24;
+            frameY += dy * 0.24;
+          } else {
+            frameX = targetX;
+            frameY = targetY;
+          }
+          cursorReticle.style.transform = `translate3d(${frameX.toFixed(2)}px, ${frameY.toFixed(2)}px, 0) translate(-50%, -50%)`;
+        }
+        requestAnimationFrame(glide);
+      }
+      requestAnimationFrame(glide);
+
+      window.addEventListener('mousemove', (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+        cursorLead.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) translate(-50%, -50%)`;
+        if (!isInit) {
+          frameX = targetX;
+          frameY = targetY;
+          isInit = true;
+          cursorReticle.style.transform = `translate3d(${frameX}px, ${frameY}px, 0) translate(-50%, -50%)`;
+        }
+        if (!isVis) {
+          isVis = true;
+          cursorLead.style.opacity = '1';
+          cursorReticle.style.opacity = '1';
+        }
+      }, { passive: true });
+
+      window.addEventListener('mousedown', () => document.body.classList.add('cursor-down'), { passive: true });
+      window.addEventListener('mouseup', () => document.body.classList.remove('cursor-down'), { passive: true });
+      document.addEventListener('mouseleave', () => { isVis = false; cursorLead.style.opacity = '0'; cursorReticle.style.opacity = '0'; });
+      document.addEventListener('mouseenter', (e) => {
+        targetX = e.clientX; targetY = e.clientY; frameX = targetX; frameY = targetY;
+        isVis = true; cursorLead.style.opacity = '1'; cursorReticle.style.opacity = '1';
+      });
+
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-active-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active-hover'));
+      });
+    }
+  </script>
+</body>
+</html>

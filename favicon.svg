@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- FNA Design Lab Favicon -->
+  <g transform="translate(5, 15)">
+    <!-- Block F (Terracotta #A24929) -->
+    <g fill="#A24929">
+      <rect x="0" y="0" width="26" height="15" rx="1.5" />
+      <rect x="0" y="22" width="26" height="13" rx="1.5" />
+      <rect x="0" y="42" width="26" height="28" rx="1.5" />
+    </g>
+    <!-- Block N (Slate #25383E) -->
+    <g fill="#25383E">
+      <polygon points="32,0 32,70 48,70 32,0" />
+      <polygon points="42,0 58,0 58,70 42,0" />
+      <polygon points="32,0 58,0 58,15" />
+      <polygon points="32,55 32,70 58,70" />
+    </g>
+    <!-- Block A (Olive #525C3A) -->
+    <g fill="#525C3A">
+      <polygon points="64,0 77,0 64,70" />
+      <polygon points="90,0 77,0 90,70" />
+      <polygon points="68,70 77,20 86,70" />
+    </g>
+  </g>
+</svg>

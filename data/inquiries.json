@@ -1,0 +1,261 @@
+[
+  {
+    "id": "inq_test_1795615662108",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "whatsapp": "+91 99887 76655",
+    "clientType": "Private Homeowner / Family",
+    "city": "Chandigarh",
+    "channel": "WhatsApp",
+    "timeSlot": "Flexible / Anytime",
+    "typology": "Architecture / Interior",
+    "area": "",
+    "budget": "",
+    "timeline": "",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-25T14:07:42.108Z"
+  },
+  {
+    "id": "inq_test_1795614618686",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "whatsapp": "+91 99887 76655",
+    "clientType": "Private Homeowner / Family",
+    "city": "Chandigarh",
+    "channel": "WhatsApp",
+    "timeSlot": "Flexible / Anytime",
+    "typology": "Architecture / Interior",
+    "area": "",
+    "budget": "",
+    "timeline": "",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-25T13:50:18.686Z"
+  },
+  {
+    "id": "inq_test_1795613651196",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-25T13:34:11.196Z"
+  },
+  {
+    "id": "inq_test_1794258226452",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T21:03:46.453Z"
+  },
+  {
+    "id": "inq_test_1794258164868",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T21:02:44.869Z"
+  },
+  {
+    "id": "inq_test_1794257119469",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T20:45:19.469Z"
+  },
+  {
+    "id": "inq_test_1794256672957",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T20:37:52.957Z"
+  },
+  {
+    "id": "inq_test_1794255350364",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T20:15:50.364Z"
+  },
+  {
+    "id": "inq_test_1794254258894",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T19:57:38.894Z"
+  },
+  {
+    "id": "inq_test_1794253727202",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T19:48:47.202Z"
+  },
+  {
+    "id": "inq_test_1794253586071",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T19:46:26.071Z"
+  },
+  {
+    "id": "inq_test_1794253143202",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T19:39:03.203Z"
+  },
+  {
+    "id": "inq_test_1794251406957",
+    "ref": "FNA-2026-9999",
+    "name": "Dr. Kabir Roy",
+    "email": "kabir.roy@example.com",
+    "phone": "+91 99887 76655",
+    "city": "Chandigarh",
+    "scopes": [
+      "Architecture"
+    ],
+    "notes": "Testing studio lead pipeline",
+    "status": "New",
+    "createdAt": "2026-11-09T19:10:06.958Z"
+  },
+  {
+    "id": "inq1",
+    "ref": "FNA-2026-8812",
+    "name": "Arjun Malhotra",
+    "email": "arjun.malhotra@gmail.com",
+    "phone": "+91 98765 43210",
+    "city": "Mumbai (Bandra West)",
+    "scopes": [
+      "Interior Architecture",
+      "Bespoke Curved Joinery",
+      "Object Commission"
+    ],
+    "notes": "We are renovating our duplex apartment in Bandra. We admire your work on the Monolith Pavilion — the restrained materiality and curved oak joinery are exactly what we envision.",
+    "status": "New",
+    "createdAt": "2026-11-04T14:30:00Z"
+  },
+  {
+    "id": "inq2",
+    "ref": "FNA-2026-7241",
+    "name": "Priya Kapoor",
+    "email": "priya.kapoor@kapoorgroup.in",
+    "phone": "+91 98110 54321",
+    "city": "New Delhi (Chhatarpur)",
+    "scopes": [
+      "Architecture",
+      "Turnkey Execution"
+    ],
+    "notes": "Commissioning a 2.5-acre modern farmhouse estate in Chhatarpur. Passive solar orientation, raw travertine, and curved board-formed concrete walls.",
+    "status": "New",
+    "createdAt": "2026-11-03T09:15:00Z"
+  },
+  {
+    "id": "inq3",
+    "ref": "FNA-2026-4419",
+    "name": "Vikram & Nisha Desai",
+    "email": "vikram.desai@outlook.com",
+    "phone": "+91 97400 21098",
+    "city": "Bangalore (Indiranagar)",
+    "scopes": [
+      "Interior Architecture",
+      "Bespoke Curved Joinery"
+    ],
+    "notes": "Purchased a heritage residence in Indiranagar. Preserving the vintage shell while inserting curved fluted wardrobe systems and floating study desks.",
+    "status": "In Review",
+    "createdAt": "2026-10-30T16:45:00Z"
+  },
+  {
+    "id": "inq4",
+    "ref": "FNA-2026-3105",
+    "name": "Devika Singhal",
+    "email": "devika@atelierroasters.com",
+    "phone": "+91 99200 88765",
+    "city": "Goa (Assagao)",
+    "scopes": [
+      "Architecture",
+      "Interior Architecture"
+    ],
+    "notes": "Opening an artisan roastery and cafe pavilion in Assagao, Goa. Indoor-outdoor flow, monolithic rammed earth bar counter, bespoke curved wood seating.",
+    "status": "Contacted",
+    "createdAt": "2026-10-25T11:20:00Z"
+  }
+]
